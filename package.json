@@ -1,0 +1,27 @@
+{
+  "name": "wizecore-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.esm.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf dist; rm index.ts; ls *.ts | sed -re \"s/\\.ts//g\" | xargs -I {} echo 'export * from \"./{}\";' > index.ts",
+    "build": "rollup --bundleConfigAsCjs -c rollup.config.js",
+    "postbuild": "rm -Rf README.md; typedoc --plugin typedoc-plugin-markdown --out docs index.ts; cat docs/modules.md | sed -re \"s/modules\\.md//\" > README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "rollup-plugin-ts": "^3.2.0",
+    "typedoc": "^0.23.28",
+    "typedoc-plugin-markdown": "^3.14.0",
+    "typescript": "^5.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "use-resize-observer": "^9.1.0"
+  }
+}
