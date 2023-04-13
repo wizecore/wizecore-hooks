@@ -33,7 +33,7 @@
 
 #### Defined in
 
-useClientOnce.ts:3
+[useClientOnce.ts:3](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useClientOnce.ts#L3)
 
 ## Functions
 
@@ -55,7 +55,7 @@ Guaranteed to run once at the client side.
 
 #### Defined in
 
-useClientOnce.ts:8
+[useClientOnce.ts:8](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useClientOnce.ts#L8)
 
 ___
 
@@ -77,7 +77,7 @@ Sets the document title.
 
 #### Defined in
 
-[useDocumentTitle.ts:6](https://github.com/wizecore/wizecore-hooks/blob/b21fb73/useDocumentTitle.ts#L6)
+[useDocumentTitle.ts:6](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useDocumentTitle.ts#L6)
 
 ___
 
@@ -106,7 +106,7 @@ Get the position of an element.
 
 #### Defined in
 
-[useElementPosition.ts:7](https://github.com/wizecore/wizecore-hooks/blob/b21fb73/useElementPosition.ts#L7)
+[useElementPosition.ts:7](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useElementPosition.ts#L7)
 
 ___
 
@@ -138,7 +138,7 @@ Request full screen for a specified iframe element
 
 #### Defined in
 
-[useFullscreen.ts:21](https://github.com/wizecore/wizecore-hooks/blob/b21fb73/useFullscreen.ts#L21)
+[useFullscreen.ts:21](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useFullscreen.ts#L21)
 
 ___
 
@@ -184,4 +184,4 @@ Parse the user agent string to determine if the user is using Safari on an iPhon
 
 #### Defined in
 
-[useUserAgent.ts:6](https://github.com/wizecore/wizecore-hooks/blob/b21fb73/useUserAgent.ts#L6)
+[useUserAgent.ts:6](https://github.com/wizecore/wizecore-hooks/blob/7149a23/useUserAgent.ts#L6)

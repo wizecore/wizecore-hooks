@@ -1,10 +1,12 @@
 {
   "name": "wizecore-hooks",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.esm.d.ts",
+  "repository": "https://github.com/wizecore/wizecore-hooks.git",
+  "homepage": "https://github.com/wizecore/wizecore-hooks",
   "scripts": {
     "prebuild": "rm -rf dist; rm index.ts; ls *.ts | sed -re \"s/\\.ts//g\" | xargs -I {} echo 'export * from \"./{}\";' > index.ts",
     "build": "rollup --bundleConfigAsCjs -c rollup.config.js",
