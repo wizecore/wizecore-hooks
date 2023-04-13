@@ -8,7 +8,8 @@
   "scripts": {
     "prebuild": "rm -rf dist; rm index.ts; ls *.ts | sed -re \"s/\\.ts//g\" | xargs -I {} echo 'export * from \"./{}\";' > index.ts",
     "build": "rollup --bundleConfigAsCjs -c rollup.config.js",
-    "postbuild": "rm -Rf README.md; typedoc --plugin typedoc-plugin-markdown --out docs index.ts; cat docs/modules.md | sed -re \"s/modules\\.md//\" > README.md"
+    "postbuild": "rm -Rf README.md; typedoc --plugin typedoc-plugin-markdown --out docs index.ts; cat docs/modules.md | sed -re \"s/modules\\.md//\" > README.md",
+    "publish": "npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
